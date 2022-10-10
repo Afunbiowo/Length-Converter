@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meter Converter</title>
+    <link rel="stylesheet" href="meterConv.css">
+</head>
+
+<body>
+    <h1>Meter Converter</h1>
+    <fieldset style="width: 30%;">
+        <h3>Input</h3>
+        <form action="">
+            <div>
+                <div>
+                    <label for="Millimeter"> Milli</label><br> <input type="number" placeholder="Miliimeter" id="milli" oninput="convertToOthers('milli', this.value)">
+                </div>
+
+                <div>
+                    <label for="Centimeter">Centi</label> <br><input type="number" placeholder="Centimeter" id="centi" oninput="convertToOthers('centi', this.value)">
+                </div>
+
+                <div>
+                    <label for=" Decimeter"> Deci</label> <br> <input type="number" placeholder="Decimeter" id="deci" oninput="convertToOthers('deci', this.value)">
+                </div>
+
+                <div>
+                    Kilo<br> <input type="number" placeholder="Kilometer" id="kilo" oninput="convertToOthers('kilo', this.value)">
+                </div>
+
+                <div>
+                    Meter <br> <input type="number" placeholder="Meter" id="meter" oninput="convertToOthers('meter', this.value)">
+                </div>
+
+
+            </div>
+            <button type="reset">Clear</button>
+        </form>
+    </fieldset>
+
+    <script src="meterConv.js"></script>
+</body>
